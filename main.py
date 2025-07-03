@@ -13,7 +13,8 @@ def apply_translation(H, offset):
 
 marker = aruco.getPredefinedDictionary(aruco.DICT_5X5_100)
 marker_params = aruco.DetectorParameters()
-aug_img = cv2.imread("A-imgs/UCoLab.png")
+aug_img = cv2.imread("UCoLab.png")
+# aug_img = cv2.imread("A-imgs/UCoLab.png")
 
 def imageMapper(frame, src, marker_corners, scale=1.5, offset_ratio=(1.1, 0)):
     src_h, src_w = src.shape[:2]
